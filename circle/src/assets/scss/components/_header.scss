@@ -1,0 +1,65 @@
+.main-header {
+  background-image: url("/assets/img/milky_way.jpg");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .top-bar, .top-bar ul {
+    background-color: transparent;
+    color: $white;
+    a {
+      font-size: .9rem;
+      color: $white;
+      font-weight: 700;
+      padding: 0.4rem 1rem;
+      &:hover {
+        color: $gray;
+        background-color: $white;
+        border-radius: 25px;
+      }
+    }
+  }
+  .site-branding {
+    img {
+      height: 50px;
+      width: 50px;
+    }
+  }
+  .header-message {
+    padding-top: 6rem;
+    h2 {
+      color: $white;
+    }
+  }
+}
+
+.title-bar {
+  justify-content: flex-end;
+}
+
+.menu-tabs {
+  a {
+    color: $lightgray;
+    &:hover {
+      color: $black;
+    }
+  }
+}
+
+@media #{$small-only} {
+  @include breakpoint(small) {
+    .main-header {
+      height: 400px;
+      text-align: center;
+      .header-message {
+        h2 {
+          font-size: 2rem;
+          font-weight: 700;
+        }
+      }
+      .top-bar ul li {
+        width: 100%;
+      }
+    }
+  }
+}

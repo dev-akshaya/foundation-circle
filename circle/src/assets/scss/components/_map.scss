@@ -1,0 +1,42 @@
+.map-container {
+  background-image: url("/assets/img/milky_way.jpg");
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .map-address {
+    height: 200px;
+    width: 200px;
+    background-color: $white;
+    color: black;
+    border-radius: 50%;
+    text-align: center;
+    padding: 20px;
+    &::before {
+      clip-path: polygon(100% 0, 0 44%, 50% 100%);
+    }
+  }
+  .top {
+    color: $lightblue;
+    font-weight: 700;
+    div:first-child {
+      font-size: 24px;
+    }
+    div:last-child {
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+  }
+  .bottom {
+    font-size: 12px;
+    color: $gray;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  hr {
+    margin: 1rem auto;
+  }
+}

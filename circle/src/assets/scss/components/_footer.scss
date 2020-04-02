@@ -1,0 +1,36 @@
+.main-footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  h3 {
+    font-size: .9rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0.7rem 1rem;
+  }
+  a {
+    color: $gray;
+    line-height: 1.5;
+    font-size: .9rem;
+  }
+  .material-icons {
+    vertical-align: middle;
+    margin: 0 5px;
+  }
+  .site-branding {
+    img {
+      height: 80px;
+      width: 80px;
+    }
+    .site-title {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      color: $black;
+      letter-spacing: 6px;
+      font-weight: 700;
+    }
+  }
+}
+
+.copy-right {
+  color: $gray;
+}
